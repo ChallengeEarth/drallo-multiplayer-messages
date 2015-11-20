@@ -54,10 +54,4 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\projects\DralloChallengeEngine\ChallengeEngine\ChallengeEngine.csproj">
-      <Project>{A2BBC125-A760-4D1E-BA6B-D5A37F590C3B}</Project>
-      <Name>ChallengeEngine</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
