@@ -6,14 +6,14 @@ namespace Drallo.MultiPlayer.Messages
     public class JoinMessage : IMessageData
     {
         [JsonProperty(PropertyName = "userName")]
-        public string userName;
+        public string Userame;
         [JsonProperty(PropertyName = "multiPlayerChallengeId")]
-        public Guid multiPlayerChallengeId;
+        public Guid MultiPlayerChallengeId;
 
-        public JoinMessage(string userName, Guid multiPlayerChallengeId)
+        public JoinMessage(string username, Guid multiPlayerChallengeId)
         {
-            this.userName = userName;
-            this.multiPlayerChallengeId = multiPlayerChallengeId;
+            this.Userame = username;
+            this.MultiPlayerChallengeId = multiPlayerChallengeId;
         }
     }
 }

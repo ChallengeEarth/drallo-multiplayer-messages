@@ -6,15 +6,15 @@ namespace Drallo.MultiPlayer.Messages
     public class EchoReplyMessage : IMessageData
     {
         [JsonProperty(PropertyName = "message")]
-        public string message { get; private set; }
+        public string Message { get; private set; }
 
         [JsonProperty(PropertyName = "timestamp")]
-        private DateTime timestamp;
+        private DateTime Timestamp;
 
         public EchoReplyMessage(string message)
         {
-            this.message = message;
-            this.timestamp = DateTime.Now;
+            this.Message = message;
+            this.Timestamp = DateTime.Now;
         }
     }
 

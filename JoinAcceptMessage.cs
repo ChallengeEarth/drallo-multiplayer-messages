@@ -8,28 +8,28 @@ namespace Drallo.MultiPlayer.Messages
     public class JoinAcceptMessage : IMessageData
     {
         [JsonProperty(PropertyName = "team")]
-        public Team team;
+        public Team Team;
         [JsonProperty(PropertyName = "multiPlayerChallengeId")]
-        public Guid multiPlayerChallengeId;
+        public Guid MultiPLayerChallengeId;
 
         public JoinAcceptMessage(Team team, Guid multiPlayerChallengeId)
         {
-            this.multiPlayerChallengeId = multiPlayerChallengeId;
-            this.team = team;
+            this.MultiPLayerChallengeId = multiPlayerChallengeId;
+            this.Team = team;
         }
     }
 
     public class Team
     {
         [JsonProperty(PropertyName = "name")]
-        public string name;
+        public string Name;
         [JsonProperty(PropertyName = "players")]
-        public List<string> players;
+        public List<string> Players;
 
         public Team(List<string> players)
         {
-            this.players = players;
-            this.name = GetRandomTeamName();
+            this.Players = players;
+            this.Name = GetRandomTeamName();
         }
 
         private string GetRandomTeamName()

@@ -7,11 +7,11 @@ namespace Drallo.MultiPlayer.Messages
     public class ActivityEventMessage : IGameManagerMessage
     {
         [JsonProperty(PropertyName = "ActivityEvent")]
-        public ActivityEvent activityEvent;
+        public ActivityEvent AcctivityEvent;
 
         public ActivityEventMessage(ActivityEvent activityEvent)
         {
-            this.activityEvent = activityEvent;
+            this.AcctivityEvent = activityEvent;
         }
     }
 }

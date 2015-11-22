@@ -6,14 +6,14 @@ namespace Drallo.MultiPlayer.Messages
     public class DeregisterMessage : IMessageData
     {
         [JsonProperty(PropertyName = "deviceId")]
-        public string deviceId;
+        public string DeviceId;
         [JsonProperty(PropertyName = "multiPlayerChallengeId")]
-        public Guid multiplayerChallengeId;
+        public Guid MultiPlayerChallengeId;
 
         public DeregisterMessage(string deviceId, Guid multiplayerChallengeId)
         {
-            this.deviceId = deviceId;
-            this.multiplayerChallengeId = multiplayerChallengeId;
+            this.DeviceId = deviceId;
+            this.MultiPlayerChallengeId = multiplayerChallengeId;
         }
     }
 }

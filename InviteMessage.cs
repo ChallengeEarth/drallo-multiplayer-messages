@@ -6,17 +6,11 @@ namespace Drallo.MultiPlayer.Messages
     public class InviteMessage : IMessageData
     {
         [JsonProperty(PropertyName = "multiPlayerChallengeId")]
-        public Guid multiPlayerChallengeId;
-
+        public Guid MultiPlayerChallengeId;
 
         public InviteMessage(Guid multiPlayerChallengeId)
         { 
-            this.multiPlayerChallengeId = multiPlayerChallengeId;  
-        }
-
-        public override string ToString()
-        {
-            return base.ToString() + "; + multiPlayerChallengeId: " + multiPlayerChallengeId;
+            this.MultiPlayerChallengeId = multiPlayerChallengeId;  
         }
     }
 }

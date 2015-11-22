@@ -6,11 +6,11 @@ namespace Drallo.MultiPlayer.Messages
     public class ActivityRecordMessage : IGameManagerMessage
     {
         [JsonProperty(PropertyName = "ActivtyRecord")]
-        public ActivityRecord activityRecord;
+        public ActivityRecord ActivityRecord;
 
         public ActivityRecordMessage(ActivityRecord activityRecord)
         {
-            this.activityRecord = activityRecord;
+            this.ActivityRecord = activityRecord;
         }
 
     }
