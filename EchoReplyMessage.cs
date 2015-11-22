@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace dralloMultiPlayer.Messages
+namespace Drallo.MultiPlayer.Messages
 {
     public class EchoReplyMessage : IMessageData
     {
@@ -10,8 +10,8 @@ namespace dralloMultiPlayer.Messages
 
         [JsonProperty(PropertyName = "timestamp")]
         private DateTime timestamp;
-        
-		public EchoReplyMessage(String message)
+
+        public EchoReplyMessage(string message)
         {
             this.message = message;
             this.timestamp = DateTime.Now;
@@ -19,4 +19,3 @@ namespace dralloMultiPlayer.Messages
     }
 
 }
-	 

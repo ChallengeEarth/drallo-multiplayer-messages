@@ -1,17 +1,18 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Drallo.ChallengeEngine.Activity.Record;
-namespace Messages
+
+namespace Drallo.MultiPlayer.Messages
 {
-	public class ActivityRecordMessage : IGameManagerMessage
-	{
-		[JsonProperty(PropertyName = "ActivityRecord")]
-		public ActivityRecord activityRecord;
+    public class ActivityRecordMessage : IGameManagerMessage
+    {
+        [JsonProperty(PropertyName = "ActivtyRecord")]
+        public ActivityRecord activityRecord;
 
-		public ActivityRecordMessage ()
-		{
-		}
+        public ActivityRecordMessage(ActivityRecord activityRecord)
+        {
+            this.activityRecord = activityRecord;
+        }
 
-	}
+    }
 }
 

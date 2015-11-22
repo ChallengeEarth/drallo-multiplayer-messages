@@ -1,15 +1,15 @@
 ﻿using Newtonsoft.Json;
 
-namespace dralloMultiPlayer.Messages
+namespace Drallo.MultiPlayer.Messages
 {
     public class UserInformationMessage : IMessageData
     {
         [JsonProperty]
-        public string information;
+        public string Information;
 
         public UserInformationMessage(string information)
         {
-            this.information = information;
+            this.Information = information;
         }
 
     }

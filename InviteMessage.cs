@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace dralloMultiPlayer.Messages
+namespace Drallo.MultiPlayer.Messages
 {
     public class InviteMessage : IMessageData
     {

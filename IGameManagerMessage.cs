@@ -1,10 +1,7 @@
-﻿using System;
-using dralloMultiPlayer.Messages;
-
-namespace Messages
+﻿namespace Drallo.MultiPlayer.Messages
 {
-	public interface IGameManagerMessage : IMessageData
-	{
-	}
+    public interface IGameManagerMessage : IMessageData
+    {
+    }
 }
 

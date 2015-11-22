@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace dralloMultiPlayer.Messages
+namespace Drallo.MultiPlayer.Messages
 {
     public class JoinMessage : IMessageData
     {
@@ -10,7 +10,7 @@ namespace dralloMultiPlayer.Messages
         [JsonProperty(PropertyName = "multiPlayerChallengeId")]
         public Guid multiPlayerChallengeId;
 
-		public JoinMessage(string userName, Guid multiPlayerChallengeId)
+        public JoinMessage(string userName, Guid multiPlayerChallengeId)
         {
             this.userName = userName;
             this.multiPlayerChallengeId = multiPlayerChallengeId;

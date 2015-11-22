@@ -1,19 +1,18 @@
-﻿using System;
-using Newtonsoft.Json;
-using Drallo.ChallengeEngine.Activity.Record;
+﻿using Newtonsoft.Json;
 using Drallo.ChallengeEngine.Activity.Event;
 
 
-namespace Messages
+namespace Drallo.MultiPlayer.Messages
 {
-	public class ActivityEventMessage : IGameManagerMessage
-	{
-		[JsonProperty(PropertyName="ActivityEvent")]
-		ActivityEvent activityEvent;
+    public class ActivityEventMessage : IGameManagerMessage
+    {
+        [JsonProperty(PropertyName = "ActivityEvent")]
+        public ActivityEvent activityEvent;
 
-		public ActivityEventMessage ()
-		{
-		}
-	}
+        public ActivityEventMessage(ActivityEvent activityEvent)
+        {
+            this.activityEvent = activityEvent;
+        }
+    }
 }
 
