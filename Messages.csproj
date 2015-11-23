@@ -30,6 +30,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ChallengeFinishedMessage.cs" />
     <Compile Include="EchoReplyMessage.cs" />
     <Compile Include="DeregisterMessage.cs" />
     <Compile Include="EchoRequestMessage.cs" />
@@ -39,7 +40,7 @@
     <Compile Include="JoinMessage.cs" />
     <Compile Include="JoinRejectMessage.cs" />
     <Compile Include="RegisterMessage.cs" />
-    <Compile Include="UserInformationMessage.cs" />
+    <Compile Include="TimeLineEntryMessage.cs" />
     <Compile Include="IGameManagerMessage.cs" />
     <Compile Include="ActivityRecordMessage.cs" />
     <Compile Include="ActivityEventMessage.cs" />
