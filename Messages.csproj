@@ -53,14 +53,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DralloChallengeEngine\ChallengeEngine\ChallengeEngine.csproj">
-      <Project>{a2bbc125-a760-4d1e-ba6b-d5a37f590c3b}</Project>
-      <Name>ChallengeEngine</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\drallo-app\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DralloChallengeEngine\ChallengeEngine\ChallengeEngine.csproj">
+      <Project>{A2BBC125-A760-4D1E-BA6B-D5A37F590C3B}</Project>
+      <Name>ChallengeEngine</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
