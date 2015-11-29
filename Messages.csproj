@@ -49,6 +49,8 @@
     <Compile Include="IGameManagerMessage.cs" />
     <Compile Include="ActivityRecordMessage.cs" />
     <Compile Include="ActivityEventMessage.cs" />
+    <Compile Include="HideMapObjectMessage.cs" />
+    <Compile Include="ShowMapObjectMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
