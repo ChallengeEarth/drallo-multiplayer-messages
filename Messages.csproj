@@ -37,14 +37,12 @@
     <Compile Include="EchoReplyMessage.cs" />
     <Compile Include="DeregisterMessage.cs" />
     <Compile Include="EchoRequestMessage.cs" />
-    <Compile Include="HideMapObjectMessage.cs" />
     <Compile Include="IMessageData.cs" />
     <Compile Include="InviteMessage.cs" />
     <Compile Include="JoinAcceptMessage.cs" />
     <Compile Include="JoinMessage.cs" />
     <Compile Include="JoinRejectMessage.cs" />
     <Compile Include="RegisterMessage.cs" />
-    <Compile Include="ShowMapObjectMessage.cs" />
     <Compile Include="TimeLineEntryMessage.cs" />
     <Compile Include="IGameManagerMessage.cs" />
     <Compile Include="ActivityRecordMessage.cs" />
