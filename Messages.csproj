@@ -49,6 +49,7 @@
     <Compile Include="ActivityEventMessage.cs" />
     <Compile Include="HideMapObjectMessage.cs" />
     <Compile Include="ShowMapObjectMessage.cs" />
+    <Compile Include="LocationUpdateMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
