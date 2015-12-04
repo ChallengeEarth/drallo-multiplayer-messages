@@ -1,16 +1,16 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using Drallo.ChallengeEngine.Feedback.Map;
+using Newtonsoft.Json;
 
 namespace Drallo.MultiPlayer.Messages
 {
     public class HideMapObjectMessage : IGameManagerMessage
     {
         [JsonProperty]
-        public Guid Id;
+        public IMapObject MapObject;
 
-        public HideMapObjectMessage(Guid id)
+        public HideMapObjectMessage(IMapObject mapObject)
         {
-            Id = id;
+            MapObject = mapObject;
         }
     }
 }
